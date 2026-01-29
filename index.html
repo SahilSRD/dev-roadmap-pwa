@@ -1,31 +1,231 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>SRD Learn – Free Programming Courses</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="SRD Learn provides free programming, web development and Android app development courses from scratch.">
-<style>
-body{font-family:system-ui;margin:0;background:#f5f7fb;color:#1f2937}
-nav{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#fff;box-shadow:0 4px 10px rgba(0,0,0,.08)}
-a{margin-left:16px;color:#4f46e5;font-weight:600;text-decoration:none}
-.hero{max-width:900px;margin:80px auto;text-align:center;padding:20px}
-.btn{display:inline-block;background:#4f46e5;color:#fff;padding:14px 24px;border-radius:12px;text-decoration:none}
-</style>
+  <title>SRD Learn – Free Programming, Web & App Development</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SRD Learn offers free programming, web development and Android app development courses using the best YouTube resources.">
+
+  <style>
+    :root{
+      --primary:#4f46e5;
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --text:#1f2937;
+    }
+    body{
+      margin:0;
+      font-family:system-ui,Segoe UI,Roboto;
+      background:var(--bg);
+      color:var(--text);
+    }
+    header{
+      background:#fff;
+      box-shadow:0 4px 10px rgba(0,0,0,.08);
+    }
+    nav{
+      max-width:1200px;
+      margin:auto;
+      padding:15px 20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    nav a{
+      margin-left:18px;
+      color:var(--primary);
+      font-weight:700;
+      text-decoration:none;
+    }
+    .hero{
+      max-width:1200px;
+      margin:70px auto;
+      padding:0 20px;
+      text-align:center;
+    }
+    .hero h1{
+      font-size:2.6em;
+    }
+    .hero p{
+      font-size:1.1em;
+      opacity:.85;
+    }
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:14px 26px;
+      background:var(--primary);
+      color:#fff;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:600;
+    }
+    section{
+      max-width:1200px;
+      margin:80px auto;
+      padding:0 20px;
+    }
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+    .card{
+      background:var(--card);
+      padding:28px;
+      border-radius:20px;
+      box-shadow:0 12px 30px rgba(0,0,0,.08);
+    }
+    .card h3{
+      margin-top:0;
+    }
+    .watch{
+      display:inline-block;
+      margin-top:15px;
+      padding:10px 18px;
+      background:var(--primary);
+      color:#fff;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+    }
+    footer{
+      text-align:center;
+      padding:50px 20px;
+      opacity:.7;
+    }
+  </style>
 </head>
+
 <body>
-<nav>
-<strong>🚀 SRD Learn</strong>
-<div>
-<a href="courses.html">Courses</a>
-<a href="about.html">About</a>
-</div>
-</nav>
+
+<header>
+  <nav>
+    <strong>🚀 SRD Learn</strong>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
 <div class="hero">
-<h1>Learn Programming From Scratch</h1>
-<p>Free structured learning paths for Web Development and Android App Development.</p>
-<a class="btn" href="courses.html">Explore Courses</a>
+  <h1>Learn Programming From Scratch</h1>
+  <p>
+    Free, structured learning paths for <b>Web Development</b>,
+    <b>Android App Development</b>, and core programming skills —
+    using the best YouTube resources.
+  </p>
+  <a class="btn" href="courses.html">Explore Courses</a>
 </div>
+
+<!-- COURSES SECTION -->
+<section>
+  <h2>📚 Courses</h2>
+  <div class="cards">
+
+    <!-- WEB DEV -->
+    <div class="card">
+      <h3>🌐 Web Development</h3>
+      <p>
+        Learn HTML, CSS, JavaScript and React from scratch
+        and build real websites.
+      </p>
+      <a class="watch" href="https://www.youtube.com/watch?v=UB1O30fR-EE" target="_blank">
+        Watch HTML Course
+      </a><br><br>
+      <a class="watch" href="https://www.youtube.com/watch?v=PkZNo7MFNFg" target="_blank">
+        Watch JavaScript Course
+      </a>
+    </div>
+
+    <!-- ANDROID DEV -->
+    <div class="card">
+      <h3>📱 Android App Development</h3>
+      <p>
+        Build real Android apps using Kotlin and Jetpack Compose,
+        even if you’ve never coded before.
+      </p>
+      <a class="watch" href="https://www.youtube.com/watch?v=F9UC9DY-vIU" target="_blank">
+        Watch Kotlin Course
+      </a><br><br>
+      <a class="watch" href="https://www.youtube.com/watch?v=6_wK_Ud8--0" target="_blank">
+        Watch Jetpack Compose
+      </a>
+    </div>
+
+    <!-- PROGRAMMING BASICS -->
+    <div class="card">
+      <h3>💻 Programming Basics</h3>
+      <p>
+        Understand programming logic, problem solving,
+        and computer science fundamentals.
+      </p>
+      <a class="watch" href="https://www.youtube.com/watch?v=zOjov-2OZ0E" target="_blank">
+        Watch Programming Basics
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- TUTORIALS SECTION -->
+<section>
+  <h2>🎥 Tutorials</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Git & GitHub</h3>
+      <a class="watch" href="https://www.youtube.com/watch?v=RGOj5yH7evk" target="_blank">
+        Watch Tutorial
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Android Studio Setup</h3>
+      <a class="watch" href="https://www.youtube.com/watch?v=H_oGi8uuDpA" target="_blank">
+        Watch Tutorial
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>VS Code Setup</h3>
+      <a class="watch" href="https://www.youtube.com/watch?v=WPqXP_kLzpo" target="_blank">
+        Watch Tutorial
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ASSETS SECTION -->
+<section>
+  <h2>🧰 Assets & Resources</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Free Code Editors</h3>
+      <p>VS Code, Android Studio, useful extensions.</p>
+    </div>
+
+    <div class="card">
+      <h3>Cheat Sheets</h3>
+      <p>HTML, CSS, JavaScript & Git cheat sheets.</p>
+    </div>
+
+    <div class="card">
+      <h3>Project Ideas</h3>
+      <p>Beginner to advanced project ideas for practice.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+© 2026 SRD Learn • Learn free • Build real skills 🚀
+</footer>
+
 </body>
 </html>
